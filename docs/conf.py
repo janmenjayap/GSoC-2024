@@ -16,7 +16,7 @@ author = 'Janmenjaya Panda'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
-    "sphinx.ext.githubpages",
+    "sphinx.ext.githubpages", # added githubpages extension
 ]
 
 autoclass_content = 'both'
