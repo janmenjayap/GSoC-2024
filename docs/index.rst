@@ -6,7 +6,7 @@
 GSoC 2024
 =========
 
-This app contains the details of my journey at Google Summer of Code 2024.
+This page contains the details of my journey at Google Summer of Code 2024.
 
 Content
 --------
