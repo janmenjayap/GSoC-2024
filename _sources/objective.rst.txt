@@ -1,0 +1,4 @@
+.. _objective:
+
+Objective
+---------
