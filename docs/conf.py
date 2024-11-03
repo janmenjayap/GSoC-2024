@@ -6,15 +6,20 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'GSoC-2024'
+project = 'gsoc-2024'
 copyright = '2024, Janmenjaya Panda'
 author = 'Janmenjaya Panda'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.githubpages",
+]
 
+autoclass_content = 'both'
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
@@ -26,4 +31,5 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
+html_favicon = "_static/favicon.ico"
 html_static_path = ['_static']
