@@ -5,8 +5,9 @@ Overview
 
 .. raw:: html
 
+    <hr/>
     <div style="overflow-x: auto; max-width: 100%;">
-        <table style="width: 100%; border-collapse: collapse; font-family: Roboto Slab; margin-bottom: 30px;">
+        <table style="width: 100%; border-collapse: collapse; font-family: Roboto Slab; margin-bottom: 10px;">
             <thead>
             <tr style="background-color: #6ab0de; border: 2px solid #000;">
                 <th style="padding: 10px; border: 2px solid #000; text-align: left; width: 20%; color: black;">Parameter</th>
@@ -51,4 +52,5 @@ Overview
             </tbody>
         </table>
     </div>
+    <hr/>
 
