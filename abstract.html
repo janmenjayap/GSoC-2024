@@ -43,6 +43,8 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Abstract</a></li>
@@ -55,6 +57,7 @@
 <li class="toctree-l1"><a class="reference internal" href="acknowledgement.html">Acknowledgement</a></li>
 </ul>
 
+  
         </div>
       </div>
     </nav>
@@ -81,7 +84,112 @@
              
   <section id="abstract">
 <span id="id1"></span><h1>Abstract<a class="headerlink" href="#abstract" title="Permalink to this heading"></a></h1>
-</section>
+<hr/><p>Matchings and perfect matchings have received considerable attention in graph
+theory as well as in other related domains (such as, but not limited to,
+algorithms and optimization). There still remain many open problems — such as
+<a class="reference external" href="https://en.wikipedia.org/wiki/Barnette%27s_conjecture">Barnette’s conjecture</a>,
+<a class="reference external" href="http://garden.irmacs.sfu.ca/op/the_berge_fulkerson_conjecture">Berge-Fulkerson conjecture</a>,
+and so on — due to which it continues to remain an active area of research. For
+problems pertaining to perfect matchings, it is well-known that it suffices to
+solve them for matching covered graphs (that is, those connected graphs wherein
+each edge belongs to some perfect matching). The theory of matching covered
+graphs, despite its relatively recent emergence, presents an exciting landscape
+filled with captivating discoveries, elegant proofs, and unexpected
+applications. In the following paragraph, we briefly summarize some of the key
+developments in this field without going into the mathematical details.</p>
+<p>Kotzig <a class="footnote-reference brackets" href="#id13" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>, in 1959, introduced the notion of canonical partition of a
+matching covered graph that uniquely partitions its vertex set into its maximal
+barriers. In 1987, László Lovász <a class="footnote-reference brackets" href="#id15" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a> established the uniqueness of the tight
+cut decomposition procedure; as per this, every matching covered graph may be
+uniquely decomposed into a list of special matching covered graphs called
+<em>bricks</em> (nonbipartite) and <em>braces</em> (bipartite). The key contribution of this
+landmark paper was to solve the Matching Lattice Problem. Lovász and Plummer,
+in 1975, introduced the well-known ear decomposition of matching covered
+graphs; see <em>Matching Theory</em> <a class="footnote-reference brackets" href="#id14" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. This notion of ear decomposition was
+further refined to that of an optimal ear decomposition by Carvalho, Lucchesi
+and Murty <a class="footnote-reference brackets" href="#id12" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. Furthermore, in their seminal paper, the same authors <a class="footnote-reference brackets" href="#id11" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>
+introduced the dependency relationship in matching covered graphs that is
+closely tied with the ear decomposition theory. In 2001, McCuaig <a class="footnote-reference brackets" href="#id17" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>
+established a generation method for all braces; analogously, Norine and Thomas
+<a class="footnote-reference brackets" href="#id19" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a>, in 2007, established a generation method for all bricks. Both of these
+generation procedures may be viewed as a synthesis of the ear decomposition and
+tight cut decomposition theories, and have found applications in solving some
+of the major problems in matching theory — such as Polya’s Permanent Problem
+<a class="footnote-reference brackets" href="#id18" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>. All of these results — pertaining to decompositions, generation methods
+and related concepts — have played indispensable roles in the advancement of
+matching theory, and continue to do so.</p>
+<p>It is worth noting that all of the notions discussed above are computable in
+poly-time. Despite this, there are no publicly available implementations. It is
+for this reason that researchers in this area are at a loss, and are required
+to implement parts of this theory by themselves. Currently, in SageMath, a few
+existing matching-theoretic algorithms for general graphs have been put within
+the module <em>Undirected graphs</em> — either under the submodule <em>Algorithmically
+hard stuff</em> (for instance:
+<a class="reference external" href="https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.matching_polynomial">matching_polynomial()</a>)
+or under <em>Leftovers</em> (for instance:
+<a class="reference external" href="https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.has_perfect_matching">has_perfect_matching()</a>,
+<a class="reference external" href="https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.matching">matching()</a>,
+<a class="reference external" href="https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.is_factor_critical">is_factor_critical()</a> and
+<a class="reference external" href="https://doc.sagemath.org/html/en/reference/graphs/sage/graphs/graph.html#sage.graphs.graph.Graph.perfect_matchings">perfect_matchings()</a>),
+whereas that concerning the bipartite graphs have been put within the module
+<em>Bipartite Graphs</em> (for instance: matching(), matching_polynomial() and
+perfect_matchings()). Ergo, we propose to implement efficient algorithms
+pertaining to the results and concepts discussed in the above paragraph in
+SageMath, and to make all of these available freely to students, educators as
+well as researchers all across the world.</p>
+<p>This proposal has been inspired by the book of Lucchesi and Murty — <em>Perfect
+Matchings: a theory of matching covered graphs</em> <a class="footnote-reference brackets" href="#id16" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a>.</p>
+<hr/>
+<b> References </b>
+<hr/><aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id11" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">1</a><span class="fn-bracket">]</span></span>
+<p>M. H. Carvalho, C. L. Lucchesi, and U. S. R. Murty. <em>Ear decompositions of matching covered
+graphs</em>. Combinatorica, 19:151–174, 1999.</p>
+</aside>
+<aside class="footnote brackets" id="id12" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">2</a><span class="fn-bracket">]</span></span>
+<p>M. H. de Carvalho, C. L. Lucchesi, and U. S. R. Murty. <em>Optimal ear decompositions of matching
+covered graphs and bases for the matching lattice</em>. Journal of Combinatorial Theory, Series B,
+76(1):1–14, 2002.</p>
+</aside>
+<aside class="footnote brackets" id="id13" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">3</a><span class="fn-bracket">]</span></span>
+<p>A. Kotzig. <em>Ein beitrag zur theorie der endlichen graphen</em> i–ii–iii. Mat. Fyz. Casopis, 9:73–91,
+136–159, and 10 (1960) 205–215, 1959.</p>
+</aside>
+<aside class="footnote brackets" id="id14" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
+<p>L. Lovász and M. D. Plummer. <em>Matching Theory</em>. Number 29 in Annals of Discrete Mathematics.
+Elsevier Science, 1986.</p>
+</aside>
+<aside class="footnote brackets" id="id15" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">5</a><span class="fn-bracket">]</span></span>
+<p>László Lovász. <em>Matching structure and the matching lattice</em>. Journal of Combinatorial Theory,
+Series B, 43(2):187–222, 1987.</p>
+</aside>
+<aside class="footnote brackets" id="id16" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">6</a><span class="fn-bracket">]</span></span>
+<p>Cláudio L. Lucchesi and U.S.R. Murty. <em>Perfect Matchings: A Theory of Matching Covered Graphs</em>.
+Algorithms and Computation in Mathematics. Springer Cham, 1 edition, 25 March 2024.</p>
+</aside>
+<aside class="footnote brackets" id="id17" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">7</a><span class="fn-bracket">]</span></span>
+<p>W. McCuaig. <em>Brace generation</em>. Journal of Graph Theory,
+38:124–169, 2001.</p>
+</aside>
+<aside class="footnote brackets" id="id18" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">8</a><span class="fn-bracket">]</span></span>
+<p>William McCuaig. <em>Pólya’s permanent problem</em>. The Electronic Journal of Combinatorics,
+11(1):R79, 2004.</p>
+</aside>
+<aside class="footnote brackets" id="id19" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">9</a><span class="fn-bracket">]</span></span>
+<p>S. Norine and R. Thomas. <em>Generating bricks</em>. Journal of Combinatorial Theory, Series B,
+97:769–817, 2007.</p>
+</aside>
+</aside>
+<hr/></section>
 
 
            </div>
