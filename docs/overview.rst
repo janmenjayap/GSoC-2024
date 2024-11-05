@@ -20,7 +20,7 @@ Overview
                 <td style="padding: 10px; border: 2px solid #000;"><a href="https://summerofcode.withgoogle.com/programs/2024" target="_blank">Google Summer of Code, 2024</a></td>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 2px solid #000;">Project</td>
+                <td style="padding: 10px; border: 2px solid #000;">Project name</td>
                 <td style="padding: 10px; border: 2px solid #000;"><a href="https://summerofcode.withgoogle.com/programs/2024/projects/iY5gx4Ls" target="_blank">On Decompositions, Generation Methods and related concepts in the theory of Matching Covered Graphs</a></td>
             </tr>
             <tr>
@@ -44,7 +44,11 @@ Overview
                 <td style="padding: 10px; border: 2px solid #000;">Mathematics, Algorithm, Graph Theory, Matchings</td>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 2px solid #000; vertical-align: top;">About</td>
+                <td style="padding: 10px; border: 2px solid #000;">Project size</td>
+                <td style="padding: 10px; border: 2px solid #000;">Large (Extended)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border: 2px solid #000; vertical-align: top;">Project details</td>
                 <td style="padding: 10px; border: 2px solid #000; text-align: justify; line-height: 1.5; word-wrap: break-word;">
                 Matchings and perfect matchings have received considerable attention in graph theory as well as in other related domains (such as, but not limited to, algorithms and optimization). There still remain many open problems — such as Barnette’s conjecture, Berge-Fulkerson conjecture, and so on — due to which it continues to remain an active area of research. For problems concerning perfect matchings, it is well-known that it suffices to solve them for matching covered graphs (that is, those connected graphs wherein each edge belongs to some perfect matching). The objective of this project is to implement efficient algorithms pertaining to the canonical partition, tight cut decomposition, dependency relations, (optimal) ear decomposition, brick and brace generation methods and related concepts in the theory of matching covered graphs, and to make all of these available freely to students, educators as well as researchers all across the world.
                 </td>
