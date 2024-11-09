@@ -18,6 +18,7 @@ Content
 * :ref:`Abstract <abstract>`
 * :ref:`Objective <objective>`
 * :ref:`Project Work <project_work>`
+
 .. * :ref:`Community Bonding Period <community_bonding_period>`
 .. * :ref:`Coding Period <coding_period>`
 .. * :ref:`Future Work <future_work>`
