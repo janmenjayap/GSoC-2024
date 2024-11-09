@@ -3,7 +3,7 @@
 Objective
 ---------
 
-The proposal submitted and accepted for the Google Summer of Code (GSoC) 2024 at SageMath can be found here: Link.
+The proposal submitted and accepted for the Google Summer of Code (GSoC) 2024 at SageMath can be found here: :download:`Link <_static/proposal.pdf>`.
 
 In the initial proposal, all methods were presented as independent, standalone functions. However, after discussions
 with my mentor, Prof. David Coudert, we concluded that a more structured approach would be beneficial. Specifically,
