@@ -17,6 +17,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.githubpages", # added githubpages extension
+    "sphinx_rtd_dark_mode"
 ]
 
 autoclass_content = 'both'
@@ -31,5 +32,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    "default_mode": "auto"
+} # (optional) set default: "auto" | "light" | "dark"
+
 html_favicon = "_static/favicon.ico"
 html_static_path = ['_static']
